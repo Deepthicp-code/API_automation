@@ -77,12 +77,6 @@ print(response.json)
 
 # creation of tasks
 url = "https://app.fieldwire.com/api/v3/projects/318d7ebe-a361-4530-8238-edc39a54115d/tasks"
-response = requests.get(url, headers=call_headers)
-print(response.text)
-
-
-url = "https://app.fieldwire.com/api/v3/projects/318d7ebe-a361-4530-8238-edc39a54115d/tasks"
-
 payload = {
     "id": "3f5085bb-5320-4b95-9c93-1d6a09118b10",
     "creator_user_id": 1195631,
@@ -114,5 +108,3 @@ payload = {
 }
 response = requests.post(url, json=payload, headers=call_headers)
 print(response.text)
-
-# delete task
